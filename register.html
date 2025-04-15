@@ -1,0 +1,39 @@
+<!-- Poppins Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+
+<!-- Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<div class="controls">
+  <label for="animationSelect">Açılış Animasyonu:</label>
+  <select id="animationSelect"></select>
+
+  <label for="speedSelect" style="margin-left: 30px;">Animasyon Hızı:</label>
+  <select id="speedSelect">
+    <option value="">Normal</option>
+    <option value="animate__slow">Yavaş</option>
+    <option value="animate__slower">Daha Yavaş</option>
+    <option value="animate__fast">Hızlı</option>
+    <option value="animate__faster">Daha Hızlı</option>
+  </select>
+</div>
+
+<button id="openModalBtn" class="modal-button">Kayıt Ol</button>
+
+<div id="popupModal" class="modal">
+  <div id="popupContent" class="modal-content animate__animated">
+    <div class="modal-image"></div>
+    <div class="modal-form">
+      <h2>Kayıt Ol</h2>
+      <form>
+        <input type="text" placeholder="Ad" required />
+        <input type="text" placeholder="Soyad" required />
+        <input type="text" placeholder="Kullanıcı Adı" required />
+        <input type="email" placeholder="E-posta" required />
+        <input type="password" placeholder="Şifre" required />
+        <button type="submit">Kayıt Ol</button>
+      </form>
+    </div>
+    <span id="closeModalBtn" class="modal-close">&times;</span>
+  </div>
+</div>
